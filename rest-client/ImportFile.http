@@ -1,0 +1,9 @@
+POST http://localhost:3333/import-file
+Content-Type: multipart/form-data; boundary=--------------------------8675309
+
+----------------------------8675309
+Content-Disposition: form-data; name="file"; filename="modelo-teste-full-stack.csv"
+Content-Type: text/csv
+
+@../modelo-teste-full-stack.csv
+----------------------------8675309--
