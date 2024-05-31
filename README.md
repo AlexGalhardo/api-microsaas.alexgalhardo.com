@@ -6,68 +6,34 @@
 
 * NestJS REST API to process .xlsx and .csv data for <https://github.com/AlexGalhardo/microsaas.alexgalhardo.com>
 
-## Technologies
-
-* [NestJS](https://nestjs.com/)
-* [Git](https://git-scm.com/)
-* [ChartJS](https://www.chartjs.org/)
-* [NodeJS v20](https://nodejs.org/en)
-* [VSCode](https://code.visualstudio.com/)
+## Prerequisites
+- Have **bun** isntalled: <https://bun.sh/docs/installation>
 
 ## Development Setup Local
 
 1. Clone this repository
-
-<!---->
-
-```
+```bash
 git clone https://github.com/AlexGalhardo/api-microsaas.alexgalhardo.com
 ```
 
 2. Enter repository
-
-<!---->
-
-```
+```bash
 cd api-microsaas.alexgalhardo.com/
 ```
 
-3. Install dependencies
-
-<!---->
-
-```
-npm install
+3. Run setup.sh
+```bash
+chmod +x setup.sh && ./setup.sh
 ```
 
-4. Create .env file
+## Testing
+- Make a POST Http Request to: <http://localhost:3000/file>
+- Send the data_test_excel.xlsx or .csv as body as Multipart Format with file name: **file** like the prints below
 
-<!---->
+<img width="1235" alt="Screenshot 2024-05-31 at 17 27 49" src="https://github.com/AlexGalhardo/microsaas.alexgalhardo.com/assets/19540357/1d9da88b-5345-41cd-bc7b-dbe9928c6113">
 
-```
-cp .env.development .env
-```
+<img width="1249" alt="Screenshot 2024-05-31 at 17 25 34" src="https://github.com/AlexGalhardo/microsaas.alexgalhardo.com/assets/19540357/dcc7f9ba-5c55-4dc4-801b-086e399e7e1f">
 
-5. Start local server
-
-<!---->
-
-```
-npm run dev
-```
-
-6. Go to: <http://localhost:3333>
-
-## Build for deploy
-
-<!---->
-
-```
-npm run build
-```
-
-## Documentation
-- You can see and add important documentation about this code repository in the [docs/](./docs/) folder
 
 ## License
 

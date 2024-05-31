@@ -17,7 +17,7 @@ interface ImportFileResponse {
 export class ImportDataController implements ImportDataControllerPort {
     constructor(@Inject("ImportFileUseCasePort") private readonly importFileUseCase: ImportFileUseCasePort) {}
 
-    @Post("/import-file")
+    @Post("/file")
     @UseInterceptors(FileInterceptor("file"))
     async importFile(
         @UploadedFile() file: Express.Multer.File,
